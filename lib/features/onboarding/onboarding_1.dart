@@ -55,8 +55,9 @@ class Onboarding1 extends StatelessWidget {
             },
             backgroundColor: Colors.transparent,
             splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            highlightElevation: 0.0,
             elevation: 0.0,
-            isExtended: true,
             child: SvgPicture.asset(
               'assets/onboarding_svg/next-Button.svg',
               width: 70,

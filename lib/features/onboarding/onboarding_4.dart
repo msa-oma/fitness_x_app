@@ -54,6 +54,9 @@ class Onboarding4 extends StatelessWidget {
               context.pushNamed(Routes.breakfastScreen);
             },
             backgroundColor: Colors.transparent,
+            splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            highlightElevation: 0.0,
             elevation: 0.0,
             isExtended: true,
             child: SvgPicture.asset(

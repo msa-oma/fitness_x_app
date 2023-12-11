@@ -54,8 +54,10 @@ class Onboarding2 extends StatelessWidget {
               context.pushNamed(Routes.onBoardingScreen3);
             },
             backgroundColor: Colors.transparent,
+            splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            highlightElevation: 0.0,
             elevation: 0.0,
-            isExtended: true,
             child: SvgPicture.asset(
               'assets/onboarding_svg/next-Button2.svg',
               width: 70,
