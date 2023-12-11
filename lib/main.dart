@@ -1,20 +1,27 @@
 import 'package:flutter/material.dart';
 
-import 'features/breakfast/breakfast.dart';
+//import 'features/breakfast/breakfast.dart';
+import 'core/routing/app_router.dart';
+import 'features/onboarding/onboarding_1.dart';
 
 void main() {
-  runApp(const FitnessX());
+  runApp(FitnessX(
+    appRouter: AppRouter(),
+  ));
 }
 
 class FitnessX extends StatelessWidget {
-  const FitnessX({super.key});
+  final AppRouter appRouter;
+
+  const FitnessX({super.key, required this.appRouter});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Poppins'),
-      home: const BreakFastScreen(),
+      onGenerateRoute: appRouter.generateRoute,
+      home: const Onboarding1(),
     );
   }
 }

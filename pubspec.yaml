@@ -35,6 +35,8 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/svgs/
+    - assets/onboarding_svg/
+
  
   fonts:
       - family: Poppins

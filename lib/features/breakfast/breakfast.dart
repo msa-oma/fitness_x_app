@@ -1,3 +1,4 @@
+import 'package:fitness_x_app/core/helper/extinsions.dart';
 import 'package:fitness_x_app/models/category_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -323,7 +324,9 @@ class _BreakFastScreenState extends State<BreakFastScreen> {
   AppBar appBar() {
     return AppBar(
       leading: GestureDetector(
-        onTap: () {},
+        onTap: () {
+          context.pop();
+        },
         child: Container(
           alignment: Alignment.center,
           width: 20,
