@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-//import 'features/breakfast/breakfast.dart';
 import 'core/routing/app_router.dart';
-import 'features/onboarding/onboarding_1.dart';
+import 'features/onboarding/onboarding_0.dart';
 
 void main() {
   runApp(FitnessX(
@@ -21,7 +20,7 @@ class FitnessX extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Poppins'),
       onGenerateRoute: appRouter.generateRoute,
-      home: const Onboarding1(),
+      home: const Onboarding0(),
     );
   }
 }
